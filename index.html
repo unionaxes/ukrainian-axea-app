@@ -1,113 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Особистий кабінет | UKRAINIAN AXES</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #1c1c1c, #000);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
-      text-align: center;
-    }
-
-    header {
-      width: 100%;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(6px);
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      color: #ffcc00;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .logo {
-      width: 110px;
-      margin: 25px auto 15px;
-      filter: drop-shadow(0 0 10px #ffcc00);
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 20px;
-      width: 85%;
-      max-width: 400px;
-      box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
-    }
-
-    .info {
-      text-align: left;
-      margin-top: 10px;
-      font-size: 16px;
-      line-height: 1.7em;
-    }
-
-    .label {
-      color: #aaa;
-    }
-
-    .value {
-      font-weight: bold;
-      color: #ffcc00;
-    }
-
-    button {
-      margin-top: 25px;
-      padding: 12px 30px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #000;
-      background: #ffcc00;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #ffcc00a8;
-      transition: all 0.2s ease;
-    }
-
-    button:hover {
-      background: #ffd633;
-      transform: scale(1.05);
-    }
-
-    footer {
-      margin-top: auto;
-      padding: 15px;
-      font-size: 13px;
-      opacity: 0.5;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UKRAINIAN AXES</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>UKRAINIAN AXES ⚔️</header>
-  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Coat_of_arms_of_Ukraine.svg" alt="logo">
+  <div class="overlay">
+    <div class="content">
+      <img class="logo" src="YOUR_IMAGE_URL_HERE" alt="UKRAINIAN AXES Logo">
+      <h1>UKRAINIAN AXES</h1>
+      <p class="subtitle">🔥 Слава Клану! Готовий до битви, воїне? 🔥</p>
 
-  <div class="card">
-    <div class="info">
-      <div><span class="label">Нік:</span> <span class="value">Topor</span></div>
-      <div><span class="label">Статус:</span> <span class="value">Активний</span></div>
-      <div><span class="label">Бали:</span> <span class="value">1240</span></div>
+      <div class="menu">
+        <button class="menu-btn">⚔️ Профіль</button>
+        <button class="menu-btn">🛡️ Клан</button>
+        <button class="menu-btn">💰 Магазин</button>
+        <button class="menu-btn">🎲 Рулетка</button>
+      </div>
     </div>
-    <button onclick="getBonus()">🎁 Отримати бонус</button>
   </div>
-
-  <footer>© 2025 Ukrainian Axes | Million Lords</footer>
-
-  <script>
-    function getBonus() {
-      alert("✅ Бонус нараховано! Гарна робота, воїне!");
-    }
-  </script>
+  <footer>© 2025 UKRAINIAN AXES • Слава Україні 🇺🇦</footer>
 </body>
 </html>

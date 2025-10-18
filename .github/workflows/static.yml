@@ -1,43 +1,88 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+* {
+  box-sizing: border-box;
+}
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["Deploy-new"]
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  background: url("YOUR_IMAGE_URL_HERE") no-repeat center center fixed;
+  background-size: cover;
+}
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+.content {
+  text-align: center;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.25);
+  width: 90%;
+  max-width: 400px;
+}
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+.logo {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255, 200, 0, 0.6);
+  margin-bottom: 10px;
+}
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+h1 {
+  font-size: 1.8em;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #ffd800, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #ccc;
+  font-size: 0.9em;
+  margin-bottom: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #007bff, #00bcd4);
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.menu-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 14px rgba(0, 123, 255, 0.8);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  color: #bbb;
+}

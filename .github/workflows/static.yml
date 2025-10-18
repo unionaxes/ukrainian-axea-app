@@ -9,7 +9,7 @@ body {
   color: #fff;
   height: 100vh;
   overflow: hidden;
-  background: url("YOUR_IMAGE_URL_HERE") no-repeat center center fixed;
+  background: url("IMG20251018_135255_205.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
